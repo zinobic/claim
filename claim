@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b16">
+<title>APOS CLAIM RADAR</title>
+<style>
+:root{color-scheme:dark;--bg:#090b16;--panel:#12172a;--line:#27304d;--text:#f4f6ff;--muted:#9ba6c7;--accent:#8b5cf6;--cyan:#56d7e8}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#20204a 0,#090b16 55%);font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);min-height:100vh}
+main{max-width:620px;margin:auto;padding:28px 18px 50px}.top{display:flex;align-items:center;gap:12px;margin-bottom:24px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--accent),var(--cyan));display:grid;place-items:center;font-weight:900;color:#090b16;font-size:20px}.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:2px;font-weight:800}.title{font-size:25px;font-weight:850;letter-spacing:.4px;margin:3px 0}.sub{color:var(--muted);font-size:13px}
+.card{background:linear-gradient(160deg,#171d34,#101526);border:1px solid var(--line);border-radius:20px;padding:19px;margin:14px 0;box-shadow:0 12px 35px #0004}.card h2{font-size:16px;margin:0 0 10px}.card p{color:var(--muted);line-height:1.5;font-size:14px;margin:7px 0}
+.status{display:flex;gap:9px;align-items:center;color:#fbd38d;font-size:13px;margin-top:12px}.dot{width:8px;height:8px;border-radius:50%;background:#f6b84a}
+button,a.btn{width:100%;border:0;border-radius:13px;padding:14px 16px;font-size:15px;font-weight:750;text-decoration:none;text-align:center;display:block;margin-top:11px;cursor:pointer;background:linear-gradient(100deg,#8b5cf6,#5b8cff);color:white}
+button.secondary,a.secondary{background:#202943;border:1px solid #34405f;color:#e9edff}
+code{color:#c4b5fd;background:#25213e;padding:2px 5px;border-radius:5px}
+.steps{padding-left:20px;color:#d8def3;font-size:14px;line-height:1.65}.steps li{margin:7px 0}
+.small{font-size:12px!important}.footer{text-align:center;color:#687493;font-size:11px;margin-top:25px}
+</style>
+</head>
+<body>
+<main>
+<header class="top"><div class="logo">AR</div><div><div class="eyebrow">APOST ACADEMY · PERSONAL TOOL</div><div class="title">APOS CLAIM RADAR</div><div class="sub">Panel rápido para gestionar avisos de tickets</div></div></header>
+
+<section class="card">
+<h2>Estado del radar</h2>
+<p>Este panel no lee Discord automáticamente ni funciona en segundo plano. Te ayuda a llegar al canal de avisos y seguir el procedimiento manual sin usar tu token.</p>
+<div class="status"><span class="dot"></span><span>Modo manual · esperando que llegue un aviso de Discord</span></div>
+<a class="btn" href="https://discord.com/app" target="_blank" rel="noopener">ABRIR DISCORD</a>
+</section>
+
+<section class="card">
+<h2>Cuando llegue un ticket</h2>
+<ol class="steps">
+<li>Abre la notificación de Discord de <code>#ticketlogs</code>.</li>
+<li>Busca el registro que diga <code>Ticket … opened</code>.</li>
+<li>Toca ese aviso para ir al canal del ticket.</li>
+<li>Comprueba que sigue disponible y pulsa <b>Claim Ticket</b> una sola vez.</li>
+<li>Espera a que Discord confirme la reclamación antes de volver a pulsar.</li>
+</ol>
+</section>
+
+<section class="card">
+<h2>Identifica los avisos</h2>
+<p><code>opened</code> — ticket creado; es el aviso que debes atender.</p>
+<p><code>claimed</code> — alguien ya lo ha reclamado.</p>
+<p><code>closed</code> — ticket cerrado.</p>
+</section>
+
+<section class="card">
+<h2>Comprobación rápida del iPhone</h2>
+<p>• Permite notificaciones de Discord en la pantalla bloqueada.</p>
+<p>• Mantén activadas las notificaciones de todos los mensajes de <code>#ticketlogs</code>.</p>
+<p>• Si usas un modo de concentración, permite Discord o desactívalo durante tu turno.</p>
+<p class="small">La velocidad también depende de la conexión y del procesamiento del servidor de Discord; este panel no puede garantizar ser el primero en reclamar.</p>
+</section>
+<div class="footer">APOS CLAIM RADAR · Sin bots de servidor · Sin token de usuario</div>
+</main>
+</body>
+</html>
